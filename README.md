@@ -1,6 +1,5 @@
 # ZX-Basic README
 
-
 ZX-Basic syntax highlighting for Visual Studio Code.
 
 Supports all reserved words from the Sinclair ZX Spectrum BASIC.
@@ -27,10 +26,8 @@ AT, LINE, STEP, TAB, THEN
 
 # Installation
 
-- Install Visual Studio Code.
-- Launch Code.
-- From the command palette **Ctrl-Shift-P** (Windows, Linux) or **Cmd-Shift-P** (OSX)
-- Select Install Extension
-- Type **ZX-Basic**
-- Choose the extension
-- Reload Visual Studio Code
+Launch VS Code Quick Open (**Ctrl+P**), paste the following commnand, and press Enter.
+
+```
+ext install zxbasic
+```
