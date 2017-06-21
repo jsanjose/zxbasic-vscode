@@ -1,2 +1,10 @@
-# zx-basic
-ZX-Basic syntax highlighting for VS-Code
+# zxbasic README
+
+
+ZX-Basic sintax highligting.
+
+## Release Notes
+
+### 1.0.0
+
+Initial release.

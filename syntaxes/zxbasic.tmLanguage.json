@@ -1,0 +1,54 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "ZX-Basic",
+    "patterns": [{
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                    "name": "keyword.control.zxbasic",
+                    "match": "(?i:\\b(BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|OPEN#|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN)\\b)"
+                },
+                {
+                    "name": "control.elements.zxbasic",
+                    "match": "(?i:\\b(AND|NOT|OR)\\b)"
+                },
+                {
+                    "name": "entity.name.function.zxbasic",
+                    "match": "(?i:\\b(ABS|ACS|ASN|ATN|ATTR|CHR$|CODE|COS|EXP|FN|INKEY$|INT|IN|LEN|LN|PEEK|PI|POINT|RND|SCREEN$|SGN|SIN|SQR|STR$|TAN|TO|USR|VAL$|VAL)\\b)"
+                },
+                {
+                    "name": "comment",
+                    "match": "(?i:\\b(REM.*)\\b)"
+                },
+                {
+                    "name": "variable.zxbasic",
+                    "match": "\\b[A-Za-z](\\$|[A-Za-z0-9]*)"
+                },
+                {
+                    "match": "-?\\b((([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?\\b",
+                    "name": "constant.numeric.zxbasic"
+                },
+                {
+                    "match": "&|\\*|\\-|\\+|=|<>|<|>|\\|\\^",
+                    "name": "keyword.operator.arithmetic.zxbasic"
+                }                
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.zxbasic",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [{
+                "name": "constant.character.escape.zxbasic",
+                "match": "\\\\."
+            }]
+        }
+    },
+    "scopeName": "source.zxbasic"
+}
