@@ -12,19 +12,19 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.zxbasic",
-                    "match": "(?i:\\b(BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|OPEN#|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN)\\b)"
+                    "match": "(?i:\\b(BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|OPEN#|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN|TO|STOP|DO|ELSE|ELSEIF|END|EXIT|FUNCTION|GOTO|GOSUB|LOOP|WEND|WHILE|BOLD|ByRef|ByVal|CONST|DECLARE|FastCall|ITALIC|StdCall|SUB|UNTIL)\\b)"
                 },
                 {
                     "name": "control.elements.zxbasic",
-                    "match": "(?i:\\b(AND|NOT|OR)\\b)"
+                    "match": "(?i:\\b(AND|NOT|OR|bAND|bNOT|bOR|bXOR|MOD|SHL|SHR|XOR)\\b)"
                 },
                 {
                     "name": "entity.name.function.zxbasic",
-                    "match": "(?i:\\b(ABS|ACS|ASN|ATN|ATTR|CHR$|CODE|COS|EXP|FN|INKEY$|INT|IN|LEN|LN|PEEK|PI|POINT|RND|SCREEN$|SGN|SIN|SQR|STR$|TAN|TO|USR|VAL$|VAL)\\b)"
+                    "match": "(?i:\\b(ABS|ACS|ASN|ATN|ATTR|CHR$|CODE|COS|EXP|FN|INKEY$|INT|IN|LEN|LN|PEEK|PI|POINT|RND|SCREEN$|SGN|SIN|SQR|STR$|TAN|USR|VAL$|VAL|ASC|CAST|CHR|CSRLIN|HEX|HEX16|GetKey|MultiKeys|GetKeyScanCode|LBOUND|LCase|STR|POS|print42|printat42|print64|printat64|SCREEN|UCase)\\b)"
                 },
                 {
                     "name": "comment",
-                    "match": "(?i:\\b(REM.*)\\b)"
+                    "match": "(?i:(\\bREM\\b|').*)"
                 },
                 {
                     "name": "variable.zxbasic",
@@ -35,7 +35,7 @@
                     "name": "constant.numeric.zxbasic"
                 },
                 {
-                    "match": "&|\\*|\\-|\\+|=|<>|<|>|\\|\\^",
+                    "match": "&|\\*|\\-|\\+|=|<>|<|>|\\|\\^|<<|>>",
                     "name": "keyword.operator.arithmetic.zxbasic"
                 }                
             ]

@@ -1,7 +1,7 @@
 {
     "name": "zxbasic",
-    "displayName": "ZXBasic",
-    "description": "ZX-Basic Sintax",
+    "displayName": "ZX-Basic",
+    "description": "Sinclair ZX Spectrum BASIC syntax highlighting",
     "version": "1.1.1",
     "publisher": "jsjlogin",
     "engines": {
