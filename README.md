@@ -34,17 +34,20 @@ This extension supports also Boriel's ZX Basic Compiler extended syntax.
 
 ## Statements
 ```
-DO, ELSE, ELSEIF, END, EXIT, FUNCTION, GOTO, GOSUB, LOOP, WEND, WHILE
+DO, ELSE, ELSEIF, END, EXIT, FUNCTION, GOTO, GOSUB, LOOP, UNTIL, WEND, WHILE
 ```
 ## Functions
 ```
 ASC, CAST, CHR, CSRLIN, HEX, HEX16, GetKey, MultiKeys, GetKeyScanCode,
-LBOUND, LCase, STR, POS, print42, printat42, print64, printat64, SCREEN,
-UCase
+LBOUND, LCase, STR, POS, SCREEN, UCase
 ```
 ## Operators
 ```
 bAND, bNOT, bOR, bXOR, MOD, SHL, <<, SHR, >>, XOR
+```
+## Data types
+```
+Byte, Ubyte, Integer, Uinteger, Long, Ulong, String, Fixed, Float
 ```
 ## Special
 ```
@@ -52,7 +55,7 @@ ALIGN, ASM
 ```
 ## Other reserved words
 ```
-BOLD, ByRef, ByVal, CONST, DECLARE, FastCall, ITALIC, StdCall, SUB
+AS, BOLD, ByRef, ByVal, CONST, DECLARE, FastCall, ITALIC, StdCall, SUB
 ```
 
 
@@ -63,3 +66,8 @@ Launch VS Code Quick Open (**Ctrl+P**), paste the following commnand, and press 
 ```
 ext install zxbasic
 ```
+
+
+# Acknowledgments
+
+- To ***boriel*** for his contributions.

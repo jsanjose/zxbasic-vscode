@@ -7,14 +7,14 @@
      of several lines
  '/
 
- DIM a as Ubyte 
- DIM b as String
+ DIM a AS Ubyte 
+ DIM b AS String
 
  30 FOR i = 1 TO 10: PRINT AT i, i; "Hello: " + i;: NEXT i
 
  40 DATA 1, 2, 3, 4, 5, 6
  50 DIM a(6)
- 60 RESTORE 40: FOR i = 1 TO 6: READ a(i): NEXT is
+ 60 RESTORE 40: FOR i = 1 TO 6: READ a(i): NEXT i
 
 100 IF a(1) = 1 THEN GOTO 200: END IF
 110 DEF FN f(n) = n AND n OR NOT n
@@ -27,7 +27,7 @@ End Function
 
 c = CHR$(5)
 
-IF a Band C THEN GOTO 100
+IF a AND c THEN GOTO 100
 END IF
 
 200 WHILE n < 10
