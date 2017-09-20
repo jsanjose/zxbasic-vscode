@@ -2,9 +2,8 @@
     "name": "zxbasic",
     "displayName": "ZX-Basic",
     "description": "Sinclair ZX Spectrum BASIC syntax highlighting",
-    "version": "1.2.0",
-    "publisher":
-        "jsjlogin",
+    "version": "1.2.1",
+    "publisher": "jsjlogin",
     "engines": {
         "vscode": "^1.12.0"
     },
