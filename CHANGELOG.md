@@ -6,6 +6,8 @@
 - Change support for operators.
 - Remove some external functions.
 - Add AS and ON keywords.
+- Updated example.bas.
+- Updated README.
 
 ## [1.2.0]
 - Added Boriel's ZX Basic Compiler extended syntax.
