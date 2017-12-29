@@ -28,6 +28,13 @@ AND, NOT, OR
 AT, LINE, STEP, TAB, THEN, TO, STOP
 ```
 
+# Spectrum Next BASIC
+
+## Statements
+```
+BANK, LAYER, PALETTE, SPRITE, TILE, REMOUNT, PWD, CD, MKDIR, RMDIR
+```
+
 # Boriel's ZX Basic Compiler
 
 This extension supports also Boriel's ZX Basic Compiler extended syntax.

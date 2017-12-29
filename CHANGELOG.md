@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.2.2]
+- Added support por new Spectrum Next BASIC commands and sintax.
+
 ## [1.2.1]
 - Add support for multiline comments.
 - Add support for data types.

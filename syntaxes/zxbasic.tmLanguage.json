@@ -12,7 +12,7 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.zxbasic",
-                    "match": "(?i:\\b(AS|BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|ON|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN|TO|STOP|DO|ELSE|ELSEIF|END|EXIT|FUNCTION|GOTO|GOSUB|LOOP|WEND|WHILE|BOLD|ByRef|ByVal|CONST|DECLARE|FastCall|ITALIC|StdCall|SUB|UNTIL)\\b)"
+                    "match": "(?i:\\b(AS|BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|ON|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN|TO|STOP|DO|ELSE|ELSEIF|END|EXIT|FUNCTION|GOTO|GOSUB|LOOP|WEND|WHILE|BOLD|ByRef|ByVal|CONST|DECLARE|FastCall|ITALIC|StdCall|SUB|UNTIL|BANK|LAYER|PALETTE|SPRITE|TILE|TO|REMOUNT|PWD|CD|MKDIR|RMDIR)\\b)"
                 },
                 {
                     "name": "keyword.operator.logical.zxbasic",
@@ -41,10 +41,10 @@
                 },
                 {
                     "name": "constant.numeric.zxbasic",
-                    "match": "-?\\b((([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?\\b"
+                    "match": "-?\\b((([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?|(\\$[a-zA-Z0-9]+)|(@[0|1]+)\\b"
                 },
                 {
-                    "match": "&|\\*|\\-|\\+|=|<>|<|>|\\|\\^|<<|>>",
+                    "match": "&|\\*|\\-|\\+|=|<>|<|>|\\|\\^|<<|>>|~",
                     "name": "keyword.operator.arithmetic.zxbasic"
                 }
             ]
