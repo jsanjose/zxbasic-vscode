@@ -42,7 +42,7 @@ END IF
 410 PRINT AT 1, n; "Until Loop"
 420 LOOP
 
-' New Spectrun NEXT BASIC commands
+' New Spectrum NEXT BASIC commands
 
 1000 LOAD f$ BANK n
 1010 LOAD f$ LAYER
