@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.2.2]
+## [1.3.0]
 - Added support por new Spectrum Next BASIC commands and sintax.
 
 ## [1.2.1]
