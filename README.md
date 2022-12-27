@@ -52,14 +52,14 @@ This extension supports also Boriel's ZX Basic Compiler extended syntax.
 ### Statements
 
 ```text
-DO, ELSE, ELSEIF, END, EXIT, FUNCTION, GOTO, GOSUB, LOOP, UNTIL, WEND, WHILE
+DO, ELSE, ELSEIF, END, ENDIF, EXIT, FUNCTION, GOTO, GOSUB, LOOP, UNTIL, WEND, WHILE
 ```
 
 ### Functions
 
 ```text
 ASC, CAST, CHR, CSRLIN, HEX, HEX16, GetKey, MultiKeys, GetKeyScanCode,
-LBOUND, LCase, STR, POS, SCREEN, UCase
+LBOUND, LCase, STR, POS, SCREEN, UCase, Print42, PrintAt42, Print64, PrintAt64
 ```
 
 ### Operators
@@ -77,13 +77,19 @@ Byte, Ubyte, Integer, Uinteger, Long, Ulong, String, Fixed, Float
 ### Special
 
 ```text
-ALIGN, ASM
+ASM, ALIGN
 ```
 
 ### Other reserved words
 
 ```text
 AS, BOLD, ByRef, ByVal, CONST, DECLARE, FastCall, ITALIC, StdCall, SUB
+```
+
+## Directives
+
+```text
+#DEFINE, #IFDEF, #IFNDEF, #ENDIF, #INCLUDE, #INCBIN, #PRAGMA, #REQUIRE
 ```
 
 ## Installation

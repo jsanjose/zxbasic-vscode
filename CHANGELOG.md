@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.3.2]
+
+- Added some missed sintax highlighting.
+- Added sintax highlight for ASM and ALIGN keywords.
+- Added Boriel's ZX Basic Compiler directives: #DEFINE, #IFDEF, #IFNDEF, #ENDIF, #INCLUDE, #INCBIN, #PRAGMA, #REQUIRE
+
 ## [1.3.1]
 
 - Small changes: added repository information to extension metadata. Cleaned "readme" and "changelog"
@@ -10,11 +16,11 @@
 
 ## [1.2.1]
 
-- Add support for multiline comments.
-- Add support for data types.
+- Added support for multiline comments.
+- Added support for data types.
 - Change support for operators.
 - Remove some external functions.
-- Add AS and ON keywords.
+- Added AS and ON keywords.
 - Updated example.bas.
 - Updated README.
 
@@ -26,12 +32,12 @@
 
 ## [1.1.1]
 
-- Add logo.
+- Added logo.
 
 ## [1.0.1]
 
-- Fix typos.
-- Add installation instructions.
+- Fixed typos.
+- Added installation instructions.
 
 ## [1.0.0]
 

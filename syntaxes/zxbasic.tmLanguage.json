@@ -1,7 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "ZX-Basic",
-    "patterns": [{
+    "patterns": [
+        {
+            "include": "#directive_strings"
+        },
+        {
             "include": "#keywords"
         },
         {
@@ -12,7 +16,7 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.zxbasic",
-                    "match": "(?i:\\b(AS|BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|ON|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN|TO|STOP|DO|ELSE|ELSEIF|END|EXIT|FUNCTION|GOTO|GOSUB|LOOP|WEND|WHILE|BOLD|ByRef|ByVal|CONST|DECLARE|FastCall|ITALIC|StdCall|SUB|UNTIL|BANK|LAYER|PALETTE|SPRITE|TILE|TO|REMOUNT|PWD|CD|MKDIR|RMDIR)\\b)"
+                    "match": "(?i:\\b(AS|BEEP|BIN|BORDER|BRIGHT|CAT|CIRCLE|CLEAR|CLOSE#|CLS|CONTINUE|COPY|DATA|DEF FN|DIM|DRAW|ERASE|FLASH|FORMAT|FOR|GO SUB|GO TO|IF|END IF|INK|INPUT|INVERSE|LET|LIST|LLIST|LOAD|LPRINT|MERGE|MOVE|NEW|NEXT|ON|OUT|OVER|PAPER|PAUSE|PLOT|POKE|PRINT|RANDOMIZE|READ|RESTORE|RETURN|RUN|SAVE|VERIFY|AT|LINE|STEP|TAB|THEN|TO|STOP|DO|ELSE|ELSEIF|END|EXIT|FUNCTION|GOTO|GOSUB|LOOP|WEND|WHILE|BOLD|ByRef|ByVal|CONST|DECLARE|FastCall|ITALIC|StdCall|SUB|UNTIL|BANK|LAYER|PALETTE|SPRITE|TILE|TO|REMOUNT|PWD|CD|MKDIR|RMDIR|ASM|END ASM|ALIGN)\\b)"
                 },
                 {
                     "name": "keyword.operator.logical.zxbasic",
@@ -20,11 +24,15 @@
                 },
                 {
                     "name": "entity.name.function.zxbasic",
-                    "match": "(?i:\\b(ABS|ACS|ASN|ATN|ATTR|CHR$|CODE|COS|EXP|FN|INKEY$|INT|IN|LEN|LN|PEEK|PI|POINT|RND|SCREEN$|SGN|SIN|SQR|STR$|TAN|USR|VAL$|VAL|ASC|CAST|CHR|CSRLIN|HEX|HEX16|GetKey|MultiKeys|GetKeyScanCode|LBOUND|LCase|STR|POS|SCREEN|UCase)\\b)"
+                    "match": "(?i:\\b(ABS|ACS|ASN|ATN|ATTR|CHR$|CODE|COS|EXP|FN|INKEY$|INT|IN|LEN|LN|PEEK|PI|POINT|RND|SCREEN$|SGN|SIN|SQR|STR$|TAN|USR|VAL$|VAL|ASC|CAST|CHR|CSRLIN|HEX|HEX16|GetKey|MultiKeys|GetKeyScanCode|LBOUND|LCase|STR|POS|SCREEN|UCase|Print42|PrintAt42|Print64|PrintAt64)\\b)"
                 },
                 {
                     "name": "entity.name.type.zxbasic",
-                    "match": "(?i:\\b(byte|ubyte|integer|uinteger|long|ulong|string|fixed|float)\\b)"
+                    "match": "(?i:\\b(BYTE|UBYTE|INTEGER|UINTEGER|LONG|ULONG|STRING|FIXED|FLOAT)\\b)"
+                },
+                {
+                    "name": "meta.preprocessor.zxbasic",
+                    "match": "(?i:(#)\\b(DEFINE|IFDEF|IFNDEF|ENDIF|INCLUDE ONCE|INCLUDE|INCBIN|PRAGMA|REQUIRE)\\b)"
                 },
                 {
                     "name": "comment.line.zxbasic",
@@ -37,15 +45,15 @@
                 },
                 {
                     "name": "variable.name.zxbasic",
-                    "match": "\\b[A-Za-z](\\$|[A-Za-z0-9]*)"
+                    "match": "\\b[A-Za-z_](\\$|[A-Za-z0-9_]*)"
                 },
                 {
                     "name": "constant.numeric.zxbasic",
                     "match": "-?\\b((([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?|(\\$[a-zA-Z0-9]+)|(@[0|1]+)\\b"
                 },
                 {
-                    "match": "&|\\*|\\-|\\+|=|<>|<|>|\\|\\^|<<|>>|~",
-                    "name": "keyword.operator.arithmetic.zxbasic"
+                    "name": "keyword.operator.arithmetic.zxbasic",
+                    "match": "(&|\\*|\\-|\\+|=|<>|<|>|\\|\\^|<<|>>|~)"
                 }
             ]
         },
@@ -53,10 +61,20 @@
             "name": "string.quoted.double.zxbasic",
             "begin": "\"",
             "end": "\"",
-            "patterns": [{
-                "name": "constant.character.escape.zxbasic",
-                "match": "\\\\."
-            }]
+            "patterns": [
+                {
+                    "name": "constant.character.escape.zxbasic",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "directive_strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.other.zxbasic",
+                    "match": "\\s[<][a-zA-Z\\.]*[>]\\s"
+                }
+            ]
         }
     },
     "scopeName": "source.zxbasic"
