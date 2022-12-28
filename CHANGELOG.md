@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.3.3]
+
+- Added some missing compiler directives.
+
 ## [1.3.2]
 
 - Added some missed sintax highlighting.

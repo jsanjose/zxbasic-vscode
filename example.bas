@@ -1,3 +1,5 @@
+' Directives
+
 #include once <screen.bas>
 #include <scroll.bas>
 
@@ -5,14 +7,18 @@
 
 #ifndef __examplebas__
 #define __examplebas__
-
-#incbin "data.bin"
-
 #endif
 
 #pragma push(case_insensitive)
 #pragma case_insensitive = TRUE
 #pragma pop(case_insensitive)
+
+#if lang == es
+#incbin "spanish.dat"
+#elif
+#incbin "english.dat"
+#endif
+
 
  10 REM This is a comment
  20 ' This, also, must be a comment

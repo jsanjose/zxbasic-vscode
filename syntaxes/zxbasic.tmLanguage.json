@@ -32,7 +32,7 @@
                 },
                 {
                     "name": "meta.preprocessor.zxbasic",
-                    "match": "(?i:(#)\\b(DEFINE|IFDEF|IFNDEF|ENDIF|INCLUDE ONCE|INCLUDE|INCBIN|PRAGMA|REQUIRE)\\b)"
+                    "match": "(?i:(#)\\b(DEFINE|IFDEF|IFNDEF|ENDIF|INCLUDE ONCE|INCLUDE|INCBIN|PRAGMA|REQUIRE|IF|ELSE|ELIF|UNDEF|INIT|LINE|ERROR|WARNING)\\b)"
                 },
                 {
                     "name": "comment.line.zxbasic",
